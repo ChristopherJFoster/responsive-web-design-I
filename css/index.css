@@ -162,17 +162,29 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  body {
+    width: 450px;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
 }
 
 @media (max-width: 800px) {
   header {
     flex-direction: column;
     align-content: space-between;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    margin: 0;
   }
 }
 
@@ -197,6 +209,21 @@ nav a {
     margin-top: 30px;
     padding: 0 20px;
     flex-grow: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+  }
+  nav a {
+    margin: 0;
+    padding: 20px 0;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+    border-bottom: 1px solid black;
   }
 }
 
@@ -276,6 +303,20 @@ nav a {
 @media (max-width: 800px) {
   .middle-img {
     width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-content {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .bottom-content {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .text-content {
+    padding: 20px 0;
   }
 }
 
