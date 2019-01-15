@@ -156,6 +156,7 @@ body {
   width: 877px;
 }
 
+/* Maybe I should set the width on .container, and not body? */
 @media (max-width: 800px) {
   body {
     width: 750px;
@@ -175,6 +176,7 @@ header {
   margin: 20px 0;
 }
 
+/* flex-direction: column is how I got the logo above the nav elements while still using flexbox. This idea came from web17_help. I wanted to use order: -1 on the logo, which is more elegant I think, but I couldn't get it to work. I think I was not applying the right flexbox properties to the right elements. */
 @media (max-width: 800px) {
   header {
     flex-direction: column;
@@ -201,6 +203,7 @@ nav a {
   flex-grow: 1;
 }
 
+/* Here I thought it was fine to cover two selectors in one @media since they are neighbors. */
 @media (max-width: 800px) {
   nav {
     justify-content: space-between;
@@ -237,6 +240,7 @@ nav a {
   }
 }
 
+/* PM Adam helped me by pointing out that the logo is wrapped in an <a> tag, and therefore the <a> is the logo's parent. I added a class to the <a> tag so I could center the logo. */
 @media (max-width: 800px) {
   .logo-anchor {
     display: flex;
@@ -275,6 +279,7 @@ nav a {
   }
 }
 
+/* I used width:100% quite a bit today - I hadn't used it much before today. It's useful for getting images to smoothly resize as the page gets smaller. */
 @media (max-width: 800px) {
   .services-header-img {
     width: 100%;
@@ -343,6 +348,7 @@ nav a {
   width: 49%;
 }
 
+/* Width: 100% is also useful to get items that are multiple-per-row to sit on their own rows for mobile. Very handy. */
 @media (max-width: 500px) {
   .service-item {
     width: 100%;
@@ -362,9 +368,6 @@ nav a {
   .services-button-div {
     display: flex;
     justify-content: center;
-  }
-
-  .service-item button {
   }
 }
 
@@ -410,6 +413,7 @@ nav a {
   margin: 35px 0 70px 0;
 }
 
+/* In this case, the quickest way I could get these items to behave at the mobile size was to take flexbox away from the "facts" div. I was able to keep the image centers by wrapping it in its own div and applying flexbox to that div instead. */
 @media (max-width: 500px) {
   .facts {
     display: block;
