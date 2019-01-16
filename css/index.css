@@ -172,7 +172,6 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
   margin: 20px 0;
 }
 
@@ -245,6 +244,7 @@ nav a {
   .logo-anchor {
     display: flex;
     justify-content: center;
+    order: -1;
   }
 }
 
